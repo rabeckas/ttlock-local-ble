@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Pridėti TTLock V3",
+        "description": "Įveskite reikšmes, ištrauktas iš Sciener Android programos duomenų bazės (būtinas rooted įrenginys). Žr. README.",
+        "data": {
+          "mac": "MAC adresas",
+          "name": "Spynos pavadinimas",
+          "aes_key": "AES raktas (hex per kablelį, pvz. aa,bb,cc,...)",
+          "user_id": "Vartotojo ID (uid)",
+          "unlock_key_b64": "Atrakinimo raktas (originalus 'unlockkey' stulpelis, base64)",
+          "auto_lock_seconds": "Auto-rakinimo grįžimo sekundės (UI tik)"
+        }
+      }
+    },
+    "error": {
+      "invalid_aes_key": "AES raktas turi būti 16 hex baitų per kablelį.",
+      "invalid_unlock_key": "Nepavyko dekoduoti unlock rakto — patikrink reikšmę."
+    },
+    "abort": {
+      "already_configured": "Ši spyna jau sukonfigūruota."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "TTLock parinktys",
+        "data": {
+          "auto_lock_seconds": "Auto-rakinimo grįžimo sekundės"
+        }
+      }
+    }
+  }
+}

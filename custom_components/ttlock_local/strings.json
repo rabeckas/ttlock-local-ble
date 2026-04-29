@@ -1,0 +1,35 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add TTLock V3",
+        "description": "Enter values extracted from the Sciener Android app database (rooted device required). See README for instructions.",
+        "data": {
+          "mac": "MAC address",
+          "name": "Lock name",
+          "aes_key": "AES key (CSV hex, e.g. aa,bb,cc,...)",
+          "user_id": "User ID (uid)",
+          "unlock_key_b64": "Unlock key (raw 'unlockkey' column, base64)",
+          "auto_lock_seconds": "Auto-lock revert seconds (UI-only)"
+        }
+      }
+    },
+    "error": {
+      "invalid_aes_key": "AES key must be 16 comma-separated hex bytes.",
+      "invalid_unlock_key": "Unlock key could not be decoded — check the value."
+    },
+    "abort": {
+      "already_configured": "This lock is already configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "TTLock options",
+        "data": {
+          "auto_lock_seconds": "Auto-lock revert seconds"
+        }
+      }
+    }
+  }
+}
