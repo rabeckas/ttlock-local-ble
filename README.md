@@ -96,6 +96,14 @@ Pull requests welcome, especially:
   (TTRenting, Roommaster, etc.).
 - A graceful fallback when `0x4C` (manual lock) is supported by the hardware.
 
+## Versioning
+
+This project follows [SemVer](https://semver.org/). Releases are tagged on
+GitHub; see [CHANGELOG.md](CHANGELOG.md) for what changed in each version.
+
+The version in `custom_components/ttlock_local/manifest.json` matches the
+latest released tag.
+
 ## License
 
 MIT — see [LICENSE](LICENSE).
